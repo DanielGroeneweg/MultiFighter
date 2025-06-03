@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4524948112737066882}
   - component: {fileID: 386853594215458298}
+  - component: {fileID: 1121296781091084076}
+  - component: {fileID: 4509222751995771685}
   m_Layer: 0
   m_Name: Left_Hand
   m_TagString: Untagged
@@ -83,6 +85,42 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &1121296781091084076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183775304838317890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b3a5ac772c5264a85878f701c22936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowTopMostFoldoutHeaderGroup: 1
+  isAttacking: 0
+  attackType: 2
+--- !u!65 &4509222751995771685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183775304838317890}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.2, y: 0.2, z: 2}
+  m_Center: {x: 0, y: 0.05, z: 0}
 --- !u!1 &200300995000038216
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,9 +759,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233084084353908806}
-  - component: {fileID: 6256787332748862512}
   - component: {fileID: 8139029118134375984}
   - component: {fileID: 6708609885871005947}
+  - component: {fileID: 3755577270613267372}
   m_Layer: 0
   m_Name: Right_Foot
   m_TagString: Player
@@ -747,27 +785,6 @@ Transform:
   - {fileID: 4163424679270751137}
   m_Father: {fileID: 8011241461049300096}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &6256787332748862512
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 744668512502293590}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.12
-  m_Center: {x: 0, y: -0.03, z: 0.07}
 --- !u!114 &8139029118134375984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -829,6 +846,27 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!65 &3755577270613267372
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744668512502293590}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 5, y: 0.1, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0.02}
 --- !u!1 &1028237246869466981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,8 +2664,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5368602781253478615}
-  - component: {fileID: 1010071697230159080}
-  - component: {fileID: 5037178798626603834}
   - component: {fileID: 9007476951404413252}
   m_Layer: 0
   m_Name: Right_Hand
@@ -2656,42 +2692,6 @@ Transform:
   - {fileID: 7192219419792134743}
   m_Father: {fileID: 2818147253002288354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &1010071697230159080
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3081079162502740076}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Radius: 0.1
-  m_Center: {x: 0, y: -0.075, z: 0}
---- !u!114 &5037178798626603834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3081079162502740076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41b3a5ac772c5264a85878f701c22936, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowTopMostFoldoutHeaderGroup: 1
-  isAttacking: 0
-  attackType: 2
 --- !u!114 &9007476951404413252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5069,9 +5069,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
-  hp: 100
-  punchDMG: 5
-  kickDMG: 10
+  punchDMG: 2
+  kickDMG: 5
   doubleTapThreshold: 0.3
   dashForce: 6.5
   animator: {fileID: 1884061947641219203}
@@ -5080,40 +5079,10 @@ MonoBehaviour:
   body: {fileID: 1058521247480132055}
   combatComponents:
   - {fileID: 8139029118134375984}
-  - {fileID: 5037178798626603834}
+  - {fileID: 1121296781091084076}
   hpBar: {fileID: 3933869521494773980}
   hpBarFull: {fileID: 1772354209820557274}
   head: {fileID: 5430948774607237975}
-  Player1Won:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2348480313691953001}
-        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Player1Vic
-          m_BoolArgument: 0
-        m_CallState: 2
-  Player2Won:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2348480313691953001}
-        m_TargetAssemblyTypeName: PlayerControls, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Player2Vic
-          m_BoolArgument: 0
-        m_CallState: 2
   lookDirection: 0
 --- !u!54 &8465571297789959401
 Rigidbody:
@@ -5140,7 +5109,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 120
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!114 &2978046922125704818
 MonoBehaviour:
