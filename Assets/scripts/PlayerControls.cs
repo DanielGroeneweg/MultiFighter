@@ -40,7 +40,7 @@ public class PlayerControls : NetworkBehaviour
 
     private Rigidbody rb;
 
-    private bool canChangeDirection = true;
+    //private bool canChangeDirection = true;
     #endregion
     private void Awake()
     {
